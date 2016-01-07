@@ -1,19 +1,14 @@
-require('normalize.css');
-require('styles/App.css');
+import React, { Component } from 'react';
 
-import React from 'react';
+import 'normalize.css';
+import 'styles/App.css';
 
-class AppComponent extends React.Component {
+export default class Main extends Component {
   render() {
     return (
       <div className="index">
-
+        {this.props.children}
       </div>
     );
   }
 }
-
-AppComponent.defaultProps = {
-};
-
-export default AppComponent;
